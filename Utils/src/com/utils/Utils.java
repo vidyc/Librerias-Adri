@@ -13,6 +13,12 @@ public class Utils {
 		return i;
 	}
 
+	public static int randInt(int max) {
+		Random r = new Random();
+		int i = r.nextInt(max);
+		return i;
+	}
+
 	public static JFrame setJFrame(JFrame frame, JPanel panel, String title,
 			int width, int height) {
 
