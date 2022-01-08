@@ -3,7 +3,7 @@ package com.utils;
 import java.util.Random;
 
 public class Screen extends Bitmap {
-	Bitmap pene;
+	Bitmap bitmap;
 
 	Random random;
 
@@ -11,7 +11,7 @@ public class Screen extends Bitmap {
 		super(width, height);
 
 		random = new Random();
-		pene = new Bitmap(256, 256);
+		bitmap = new Bitmap(256, 256);
 
 		for (int i = 0; i < 256 * 256; i++) {
 			pene.pixels[i] = random.nextInt();
@@ -21,7 +21,7 @@ public class Screen extends Bitmap {
 
 	public void render() {
 
-		draw(pene, 0, 0);
+		draw(bitmap, 0, 0);
 
 	}
 
